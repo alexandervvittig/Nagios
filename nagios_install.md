@@ -1,6 +1,11 @@
 # nagios install
 >Source: https://assets.nagios.com/downloads/nagioscore/docs/Nagios-Core-Installing-On-Centos7.pdf
 
+Switch to root mode, if you run some commands without sudo it will cause issues
+```
+su
+```
+
 ### Disable SELinux
 Prior to starting our install, we need to disable SELinux.  
 ```setenforce 0```  
