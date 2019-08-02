@@ -39,6 +39,6 @@ If you run into issues, check the log files / error report
 /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 
 # run to check client data
-/usr/local/nagios/libexec/check_nt -H HOST_IP -s HOST_PW -p 12489 HOST_PW -v MEMUSE -w 80 -c 90
+/usr/local/nagios/libexec/check_nt -H HOST_IP -s HOST_PW -p 12489 -v MEMUSE -w 80 -c 90
 
 ```
