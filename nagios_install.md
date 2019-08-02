@@ -72,6 +72,15 @@ service nagios start
 ```
 You should now be able to access your machine by navigating to http://SERVER_IP_HERE/nagios/ - if this does not work then please try these two
 troubleshooting steps.
+
+### Set Services to AutoStart on reboot
+```
+systemctl is-enabled nagios
+systemctl is-enabled httpd
+systemctl enable nagios
+systemctl enable httpd
+```
+
 ### Troubleshooting
 If you cannot access the Nagios web page, it may be related to your firewall rules. The following command will open up port 80 on your
 Nagios Core machine.
